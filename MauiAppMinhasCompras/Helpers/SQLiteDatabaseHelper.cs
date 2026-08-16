@@ -32,7 +32,6 @@ namespace MauiAppMinhasCompras.Helpers
             return connection.Table<Produto>().DeleteAsync(i => i.Id == id);
         }
 
-
         public Task<List<Produto>> GetAll() 
         {
             return connection.Table<Produto>().ToListAsync();
